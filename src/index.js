@@ -1,6 +1,6 @@
 import { homeContent } from './home.js';
 import { menuContent } from './menu.js';
-import { aboutContent } from './about.js';
+import { contactContent } from './contact.js';
 
 const buttons = document.querySelectorAll('button');
 const contentDiv = document.getElementById('content');
@@ -30,8 +30,8 @@ buttons.forEach((button) => {
 			menuContent();
 		}
 
-		if (button.textContent === "About") {
-			aboutContent();
+		if (button.textContent === "Contact Us") {
+			contactContent();
 		}
 	});
 });
