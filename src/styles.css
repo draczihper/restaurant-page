@@ -4,3 +4,18 @@
 	box-sizing: border-box;
 }
 
+img {
+	width: 200px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	background-color: dimgray;
+	height: 50px;
+}
+
+
+
