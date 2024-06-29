@@ -1,8 +1,36 @@
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.home {
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: calc(100vh - 64px);
+	background-color: hsla(0, 0%, 20%, 0.3);
+
+}
+
+.background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -99;
+	background-image: url('./assets/caffe.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
 
 img {
 	width: 200px;
@@ -12,10 +40,45 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 30px;
-	background-color: dimgray;
-	height: 50px;
+/*	gap: 30px;*/
+	background-color: hsl(0, 0%, 20%);
+/*	height: 50px;*/
 }
+
+nav:first-child, nav:last-child {
+	border-left: 1px solid hsl(0, 0%, 80%);
+	border-right: 1px solid hsl(0, 0%, 80%);
+}
+
+nav:hover {
+	background-color: hsl(37, 6%, 54%);
+	cursor: pointer;
+}
+
+nav:active {
+	background-color: hsl(0, 0%, 100%);
+	color: black;
+
+}
+
+button {
+	all: unset;
+	font-size: 20px;
+	font-weight: 400;
+	color: hsl(0, 0%, 80%);
+	font-family: monospace;
+	padding: 20px 30px;
+}
+
+button:active {
+	color: black;
+}
+
+h1, h3, p {
+	color: white;
+	font-family: monospace;
+}
+
 
 
 
