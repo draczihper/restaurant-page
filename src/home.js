@@ -4,6 +4,7 @@ const homeContent = () => {
 	const contentDiv = document.querySelector("#content");
 
 	const homeDiv = document.createElement("div");
+	homeDiv.setAttribute('class', 'home')
 	const homeH1 = document.createElement("h1");
 	homeH1.textContent = "Our Drinks";
 
@@ -11,9 +12,9 @@ const homeContent = () => {
 	homePara.textContent = "When it comes to the important stuff - the drink - we are committed to sourcing and serving is one of the highest quality and we believe is nothing short of the best drink possible";
 
 
-	const img = document.createElement("img");
-	img.src = caffeImg;
-	homeDiv.appendChild(img);
+	const imgDiv = document.createElement("div");
+	imgDiv.setAttribute("class", "background");
+	homeDiv.appendChild(imgDiv);
 
 
 
