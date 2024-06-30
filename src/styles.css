@@ -16,9 +16,9 @@ body {
 	position: relative;
 	width: 100vw;
 	height: calc(100vh - 64px);
-	background-color: hsla(0, 0%, 20%, 0.3);
+	background-color: hsla(0, 0%, 10%, 0.4);
 	display: flex;
-	justify-content: center;
+/*	justify-content: center;*/
 	align-items: center;
 	flex-direction: column;
 
@@ -81,6 +81,11 @@ button:active {
 h1, h3, p {
 	color: white;
 	font-family: monospace;
+}
+
+.home h1, p {
+	position: relative;
+	top: 30%;
 }
 
 .home h1 {
