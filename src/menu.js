@@ -14,6 +14,7 @@ const menuContent = () => {
 	const contentDiv = document.querySelector("#content");
 
 	const menuDiv = document.createElement('div');
+	menuDiv.setAttribute('class', 'menu');
 	const menuH1 = document.createElement('h1');
 	menuH1.textContent = "The Menu";
 	menuDiv.appendChild(menuH1);
