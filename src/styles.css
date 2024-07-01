@@ -32,7 +32,6 @@ body {
 	background-image: url('./assets/caffe.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	overflow: hidden;
 }
 
 
@@ -85,18 +84,20 @@ h1, h3, p {
 
 .home h1, p {
 	position: relative;
-	top: 30%;
+	top: 25%;
 }
 
 .home h1 {
 	color: white;
 	font-size: 44px;
+	margin-bottom: 40px;
 }
 
 .home p {
 	color: white;
 	font-size: 18px;
-	padding: 0 150px;
+	padding: 0 300px;
+	text-align: center;
 }
 
 
