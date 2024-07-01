@@ -21,6 +21,7 @@ const menuContent = () => {
 
 	menuItems.forEach(item => {
 		const itemDiv = document.createElement('div');
+		itemDiv.setAttribute('class', 'menuItem')
 
 		const itemImg = document.createElement('img');
 		itemImg.src = item.img;
