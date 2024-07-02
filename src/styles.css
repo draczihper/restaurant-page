@@ -101,5 +101,10 @@ h1, h3, p {
 }
 
 
-
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
 
