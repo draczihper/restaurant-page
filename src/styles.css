@@ -110,6 +110,13 @@ h1, h3, p {
 	overflow: hidden;
 }
 
+@keyframes scrollLeft {
+	to {
+		left: -250px;
+	}
+}
+
+
 .menu h1 {
 	text-align: center;
 	font-size: 44px;
@@ -117,15 +124,29 @@ h1, h3, p {
 }
 
 .menuItem {
-	width: 300px;
-	height: 300px;
-	border: 1px solid black;
+	width: 250px;
+	background-color: hsl(0, 0%, 20%);
+	height: 405px;
 	border-radius: 8px;
 	overflow: hidden;
 	position: absolute;
+	left: 100%;
+	animation-name: scrollLeft;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.menuItem:hover {
+	animation-play-state: paused;
 }
 
 
 .menuItem img {
-	width: 300px;
+	width: 250px;
+}
+
+.menuItem h3 {
+	text-align: center;
+
 }
