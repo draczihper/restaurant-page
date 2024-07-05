@@ -4,7 +4,7 @@ import cappuccinoImg from './assets/cappuccino.jpg';
 
 
 const menuItems = [
-	{img: bobaImg, text: "Boba"},
+	{img: cappuccinoImg, text: "Boba"},
 	{img: latteImg, text: "Latte"},
 	{img: cappuccinoImg, text: "Cappuccino"}
 
@@ -19,9 +19,10 @@ const menuContent = () => {
 	menuH1.textContent = "The Menu";
 	menuDiv.appendChild(menuH1);
 
-	menuItems.forEach(item => {
+	menuItems.forEach((item, index) => {
 		const itemDiv = document.createElement('div');
 		itemDiv.setAttribute('class', 'menuItem')
+		itemDiv.id = `item${index + 1}`;
 
 		const itemImg = document.createElement('img');
 		itemImg.src = item.img;
