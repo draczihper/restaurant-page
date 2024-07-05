@@ -102,9 +102,19 @@ h1, h3, p {
 
 
 .menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+	position: absolute;
+	
 }
 
+.menuItem {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+
+.menuItem img {
+	width: 300px;
+}
