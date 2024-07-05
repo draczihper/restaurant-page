@@ -34,8 +34,15 @@ const menuContent = () => {
 		itemDiv.appendChild(itemH3);
 		menuDiv.appendChild(itemDiv);
 
+		itemDiv.addEventListener('mouseover', () => {
+			menuDiv.classList.add('paused');
+		});
 
-	})
+		itemDiv.addEventListener('mouseout', () => {
+			menuDiv.classList.remove('paused');
+		});
+		
+	});
 
 
 	return contentDiv.appendChild(menuDiv);
