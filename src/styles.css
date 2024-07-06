@@ -12,7 +12,7 @@ body {
 }
 
 .home {
-	overflow: hidden;
+	overflow-y: hidden;
 	position: relative;
 	width: 100vw;
 	height: calc(100vh - 64px);
@@ -161,9 +161,6 @@ h1, h3, p {
 	animation-delay: calc(30s / 3 * (3 - 3) * -1);
 }
 
-
-
-
 .menuItem img {
 	width: 250px;
 }
@@ -172,3 +169,4 @@ h1, h3, p {
 	text-align: center;
 
 }
+

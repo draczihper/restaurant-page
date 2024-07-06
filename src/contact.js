@@ -9,13 +9,16 @@ const contactContent = () => {
 	const contentDiv = document.querySelector('#content');
 
 	const contactDiv = document.createElement('div');
+	contactDiv.setAttribute('class', 'contact');
 
 	const cardDiv = document.createElement('div');
+	cardDiv.setAttribute('class', 'card');
 	const cardH3 = document.createElement('h3');
 	cardH3.textContent = "Find Us";
 	cardDiv.appendChild(cardH3);
 
 	const addressDiv = document.createElement('div');
+	addressDiv.setAttribute('class', 'address');
 	cardDiv.appendChild(addressDiv);
 
 	const locationDiv = document.createElement('div');
