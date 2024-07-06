@@ -176,5 +176,14 @@ h1, h3, p {
 	background-image: url('./assets/caffe.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
+
+.card {
+	display: flex;
+	flex-direction: row;
+}
+
+.card img {
+	width: 50px;
+}
+

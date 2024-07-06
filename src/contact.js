@@ -15,7 +15,7 @@ const contactContent = () => {
 	cardDiv.setAttribute('class', 'card');
 	const cardH3 = document.createElement('h3');
 	cardH3.textContent = "Find Us";
-	cardDiv.appendChild(cardH3);
+	// cardDiv.appendChild(cardH3);
 
 	const addressDiv = document.createElement('div');
 	addressDiv.setAttribute('class', 'address');
