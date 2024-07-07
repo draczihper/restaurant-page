@@ -188,3 +188,7 @@ h1, h3, p {
 	width: 50px;
 }
 
+.card form {
+	all: unset;
+}
+
