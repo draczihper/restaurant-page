@@ -181,6 +181,7 @@ h1, h3, p {
 .card {
 	display: flex;
 	flex-direction: row;
+	background-color: hsl(0, 0%, 20%);
 }
 
 .card img {
