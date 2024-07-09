@@ -15,11 +15,15 @@ const contactContent = () => {
 	cardDiv.setAttribute('class', 'card');
 	const cardH3 = document.createElement('h3');
 	cardH3.textContent = "Find Us";
-	// cardDiv.appendChild(cardH3);
+	cardDiv.appendChild(cardH3);
+
+	const wrapper = document.createElement('div');
+	wrapper.setAttribute('class', 'wrapper');
+	cardDiv.appendChild(wrapper);
 
 	const addressDiv = document.createElement('div');
 	addressDiv.setAttribute('class', 'address');
-	cardDiv.appendChild(addressDiv);
+	wrapper.appendChild(addressDiv);
 
 	const locationDiv = document.createElement('div');
 	const locationIcon = document.createElement('img');
@@ -107,7 +111,7 @@ const contactContent = () => {
 
     formDiv.appendChild(form);
 
-    cardDiv.appendChild(formDiv);
+    wrapper.appendChild(formDiv);
 
     contactDiv.appendChild(cardDiv);
 
