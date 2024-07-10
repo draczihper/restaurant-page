@@ -198,3 +198,7 @@ h1, h3, p {
 	all: unset;
 }
 
+.card h3 {
+	text-align: center;
+}
+
