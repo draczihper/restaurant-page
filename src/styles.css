@@ -172,7 +172,7 @@ h1, h3, p {
 
 .contact {
 	width: 100vw;
-	height: 100vh;	
+	height: calc(100vh - 64px);	
 	background-image: url('./assets/caffe.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -182,13 +182,13 @@ h1, h3, p {
 }
 
 .card {
-	width: 80vw;
-	height: 80vh;
+	width: 70vw;
+	height: 70vh;
 	display: flex;
 	flex-direction: column;
 	background-color: hsl(0, 0%, 20%);
 	border-radius: 10px;
-	padding: 15px 30px;
+	padding: 10px 30px;
 }
 
 .card h3 {
@@ -206,7 +206,7 @@ h1, h3, p {
 }
 
 .address div{
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .address p, img {
@@ -219,7 +219,9 @@ h1, h3, p {
 	color: white;
 }
 
-
+.address p {
+	font-size: 14px;
+}
 
 form {
 	display: flex;
