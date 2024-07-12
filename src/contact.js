@@ -26,6 +26,7 @@ const contactContent = () => {
 	wrapper.appendChild(addressDiv);
 
 	const locationDiv = document.createElement('div');
+	locationDiv.setAttribute('class', 'location')
 	const locationIcon = document.createElement('img');
 	locationIcon.src = pinIcon;
 	const locationText = document.createElement('p');
@@ -35,6 +36,7 @@ const contactContent = () => {
 	addressDiv.appendChild(locationDiv);
 
 	const phoneDiv = document.createElement('div');
+	phoneDiv.setAttribute('class', 'phone');
 	const phoneIcon = document.createElement('img');
 	phoneIcon.src = callIcon;
 	const phoneText = document.createElement('p');
@@ -44,6 +46,7 @@ const contactContent = () => {
 	addressDiv.appendChild(phoneDiv);
 
 	const socialDiv = document.createElement('div');
+	socialDiv.setAttribute('class', 'socials')
 	addressDiv.appendChild(socialDiv);
 
 	const instagramLink = document.createElement('a');
