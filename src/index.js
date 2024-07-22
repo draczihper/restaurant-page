@@ -1,31 +1,30 @@
-import { homeContent } from './home.js';
-import { menuContent } from './menu.js';
-import { contactContent } from './contact.js';
-import './styles.css';
+import { homeContent } from "./home.js";
+import { menuContent } from "./menu.js";
+import { contactContent } from "./contact.js";
+import "./styles.css";
 
-const buttons = document.querySelectorAll('button');
-const contentDiv = document.getElementById('content');
-
+const buttons = document.querySelectorAll("button");
+const contentDiv = document.getElementById("content");
 
 // A function to clear the existing content
 function clearContent() {
-    while (contentDiv.firstChild) {
-        contentDiv.removeChild(contentDiv.firstChild);
-    }
+	while (contentDiv.firstChild) {
+		contentDiv.removeChild(contentDiv.firstChild);
+	}
 }
 
 // Load the initial content
-document.addEventListener('DOMContentLoaded', () => {
-    contactContent();
+document.addEventListener("DOMContentLoaded", () => {
+	contactContent();
 });
 
 buttons.forEach((button) => {
-	button.addEventListener('click', () => {
+	button.addEventListener("click", () => {
 		clearContent();
 
 		if (button.textContent === "Home") {
 			homeContent();
-		} 
+		}
 
 		if (button.textContent === "Menu") {
 			menuContent();
