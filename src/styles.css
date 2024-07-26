@@ -1,5 +1,3 @@
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -18,10 +16,9 @@ body {
 	height: calc(100vh - 64px);
 	background-color: hsla(0, 0%, 10%, 0.4);
 	display: flex;
-/*	justify-content: center;*/
+	/*	justify-content: center;*/
 	align-items: center;
 	flex-direction: column;
-
 }
 
 .background {
@@ -29,11 +26,10 @@ body {
 	width: 100vw;
 	height: 100vh;
 	z-index: -99;
-	background-image: url('./assets/caffe.jpg');
+	background-image: url("./assets/caffe.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 
 img {
 	width: 200px;
@@ -43,12 +39,13 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-/*	gap: 30px;*/
+	/*	gap: 30px;*/
 	background-color: hsl(0, 0%, 20%);
-/*	height: 50px;*/
+	/*	height: 50px;*/
 }
 
-nav:first-child, nav:last-child {
+nav:first-child,
+nav:last-child {
 	border-left: 1px solid hsl(0, 0%, 80%);
 	border-right: 1px solid hsl(0, 0%, 80%);
 }
@@ -61,7 +58,6 @@ nav:hover {
 nav:active {
 	background-color: hsl(0, 0%, 100%);
 	color: black;
-
 }
 
 button {
@@ -77,12 +73,15 @@ button:active {
 	color: black;
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
 	color: white;
 	font-family: monospace;
 }
 
-.home h1, p {
+.home h1,
+p {
 	position: relative;
 	top: 25%;
 }
@@ -100,15 +99,14 @@ h1, h3, p {
 	text-align: center;
 }
 
-
 .menu {
 	width: 100vw;
 	height: calc(100vh - 64px);
 	position: relative;
-	background-image: url('./assets/boba.jpg');
+	background-image: url("./assets/boba.jpg");
 	background-size: cover;
 	overflow: hidden;
-/*	mask-image: linear-gradient(
+	/*	mask-image: linear-gradient(
 		to right,
 		hsla(0, 0%, 0%, 0),
 		hsla(0, 0%, 10%, 1) 20%,
@@ -122,7 +120,6 @@ h1, h3, p {
 		left: -250px;
 	}
 }
-
 
 .menu h1 {
 	text-align: center;
@@ -167,13 +164,12 @@ h1, h3, p {
 
 .menuItem h3 {
 	text-align: center;
-
 }
 
 .contact {
 	width: 100vw;
-	height: calc(100vh - 64px);	
-	background-image: url('./assets/caffe.jpg');
+	height: calc(100vh - 64px);
+	background-image: url("./assets/caffe.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -182,8 +178,8 @@ h1, h3, p {
 }
 
 .card {
-	width: 70vw;
-	height: 70vh;
+	width: calc(70vw) px;
+	height: calc(70vh) px;
 	display: flex;
 	flex-direction: column;
 	background-color: hsl(0, 0%, 20%);
@@ -205,11 +201,13 @@ h1, h3, p {
 	justify-content: space-between;
 }
 
-.address div{
+.address div {
 	margin-bottom: 15px;
+	margin-right: 20px;
 }
 
-.address p, img {
+.address p,
+img {
 	display: inline;
 	vertical-align: middle;
 }
@@ -231,4 +229,20 @@ h1, h3, p {
 form {
 	display: flex;
 	flex-direction: column;
+	width: 400px;
+	gap: 20px;
+}
+
+.form h3 {
+	text-decoration: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+form input,
+textarea {
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 3px;
 }
