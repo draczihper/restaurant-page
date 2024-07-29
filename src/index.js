@@ -15,7 +15,7 @@ function clearContent() {
 
 // Load the initial content
 document.addEventListener("DOMContentLoaded", () => {
-	contactContent();
+	homeContent();
 });
 
 buttons.forEach((button) => {
